@@ -7,7 +7,6 @@ from my_project1.my_project1_stack import MyProject1Stack
 
 
 app = cdk.App()
-MyProject1Stack(app, "MyProject1Stack",    )
 MyProject1Stack(app, "MyProject1Stack222",    )
 
 app.synth()
