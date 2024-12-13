@@ -2,6 +2,7 @@
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
 name: Python package
+
 on:
   push:
     branches: [ "main" ]
@@ -18,9 +19,8 @@ jobs:
    
     - name: install AWS CDK
       run: sudo npm i -g aws-cdk
-    - name: install deployment dependencies
-      working-directory: .
-      run: npm ci
+
+    
     - name: cdk synth
       working-directory: .
       run: cdk synth
