@@ -1,0 +1,13 @@
+@url = https://h15g52u2y5.execute-api.eu-north-1.amazonaws.com/prod
+
+GET {{url}}/empl?id=3ebcd909-7480-42c6-bb01-78e55fcb62f8
+
+###
+
+POST {{url}}/empl
+Content-Type: application/json
+
+{
+    "name": "John",
+    "position": "engineer"
+}
