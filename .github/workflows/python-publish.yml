@@ -19,9 +19,8 @@ jobs:
    
     - name: install AWS CDK
       run: sudo npm i -g aws-cdk
-    - name: install deployment dependencies
-      working-directory: .
-      run: npm ci
+
+    
     - name: cdk synth
       working-directory: .
       run: cdk synth
